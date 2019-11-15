@@ -1,4 +1,4 @@
-package ua.epam.javacore.lesson_02;
+package d;
 
 public class MakeString {
     public static void main(String args[]) {
