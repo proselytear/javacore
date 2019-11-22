@@ -7,6 +7,7 @@ public class Outer {
         inner.display();
     }
     // this is an inner class
+
     class Inner {
         void display() {
             System.out.println("display: outer_x = " + outer_x);

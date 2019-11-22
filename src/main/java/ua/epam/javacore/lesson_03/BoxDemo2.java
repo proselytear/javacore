@@ -2,23 +2,23 @@ package ua.epam.javacore.lesson_03;
 
 class BoxDemo2 {
     public static void main(String args[]) {
-        Box mybox1 = new Box();
-        Box mybox2 = new Box();
+        Box myBox1 = new Box();
+        Box myBox2 = myBox1;
         double vol;
-// assign values to mybox1's instance variables
-        mybox1.width = 10;
-        mybox1.height = 20;
-        mybox1.depth = 15;
-/* assign different values to mybox2's
+
+        myBox1.width = 10;
+        myBox1.height = 20;
+        myBox1.depth = 15;
+/* assign different values to myBox2's
 instance variables */
-        mybox2.width = 3;
-        mybox2.height = 6;
-        mybox2.depth = 9;
+        myBox2.width = 3;
+        myBox2.height = 6;
+        myBox2.depth = 9;
 // compute volume of first box
-        vol = mybox1.width * mybox1.height * mybox1.depth;
+        vol = myBox1.width * myBox1.height * myBox1.depth;
         System.out.println("Volume is " + vol);
 // compute volume of second box
-        vol = mybox2.width * mybox2.height * mybox2.depth;
+        vol = myBox2.width * myBox2.height * myBox2.depth;
         System.out.println("Volume is " + vol);
     }
 }

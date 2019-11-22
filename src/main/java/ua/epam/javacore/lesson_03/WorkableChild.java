@@ -2,7 +2,7 @@ package ua.epam.javacore.lesson_03;
 
 public interface WorkableChild extends Workable {
 
-    public default void childMethod(){
+    default void childMethod(){
         System.out.println("CHILD METHOD");
     }
 

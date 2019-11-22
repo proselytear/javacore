@@ -9,13 +9,13 @@ public class BoxWithConstructor {
     // This is the constructor for Box.
     BoxWithConstructor() {
         System.out.println("Constructing Box");
-        width = 10;
-        height = 10;
-        depth = 10;
+        this.width = 10;
+        this.height = 10;
+        this.depth = 10;
     }
 
     // compute and return volume
     double volume() {
-        return width * height * depth;
+        return this.width * this.height * this.depth;
     }
 }

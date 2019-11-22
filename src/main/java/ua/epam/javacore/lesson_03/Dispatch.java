@@ -8,6 +8,6 @@ public class Dispatch {
 
         aa.callme();
         bb.callme();
-        aa.callme();
+        cc.callme();
     }
 }
