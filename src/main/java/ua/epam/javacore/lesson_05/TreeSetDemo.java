@@ -12,7 +12,7 @@ public class TreeSetDemo {
         ts.add("B");
         ts.add("E");
         ts.add("F");
-        ts.add("D");
+        System.out.println(ts.add("D"));
         System.out.println(ts);
     }
 }

@@ -24,3 +24,4 @@ class ListNode {
         val = x;
     }
 }
+//    public ListNode removeElements(ListNode head, int val) {
