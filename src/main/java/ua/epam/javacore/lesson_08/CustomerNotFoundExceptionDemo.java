@@ -1,9 +1,10 @@
 package ua.epam.javacore.lesson_08;
 
 public class CustomerNotFoundExceptionDemo {
-    static void findCustomerById(int id) throws CustomerNotFoundException {
+    static String findCustomerById(int id) throws CustomerNotFoundException {
         if (id == 1) {
             System.out.println("Customer details...");
+            return "T";
         }
         throw new CustomerNotFoundException(id);
     }
