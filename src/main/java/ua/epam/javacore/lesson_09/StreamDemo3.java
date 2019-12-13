@@ -1,23 +1,18 @@
 package ua.epam.javacore.lesson_09;
 
-import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class StreamDemo3 {
     public static void main(String[] args) {
 // This is now a list of double values.
-        ArrayList<Double> myList = new ArrayList<>( );
-        myList.add(7.0);
-        myList.add(18.0);
-        myList.add(10.0);
-        myList.add(24.0);
-        myList.add(17.0);
-        myList.add(5.0);
+        List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5, 6);
+        int result = numbers
+                .stream()
+                .reduce(1, (subtotal, element) ->
+                        subtotal * element + 1);
 
-        double productOfSqrRoots = myList.parallelStream().reduce(
-                1.0,
-                (a,b) -> a * Math.sqrt(b),
-                (a,b) -> a * b
-        );
-        System.out.println("Product of square roots: " + productOfSqrRoots);
+        System.out.println(numbers);
+        System.out.println(result);
     }
 }

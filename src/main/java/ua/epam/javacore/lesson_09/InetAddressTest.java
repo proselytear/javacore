@@ -5,12 +5,12 @@ import java.net.UnknownHostException;
 
 public class InetAddressTest {
     public static void main(String args[]) throws UnknownHostException {
-        InetAddress Address = InetAddress.getLocalHost();
-        System.out.println(Address);
-        Address = InetAddress.getByName("www.epam.ua");
-        System.out.println(Address);
-        InetAddress SW[] = InetAddress.getAllByName("www.proselyte.net");
-        for (int i=0; i<SW.length; i++)
-            System.out.println(SW[i]);
+        InetAddress address = InetAddress.getLocalHost();
+        System.out.println(address);
+        address = InetAddress.getByName("www.epam.ua");
+        System.out.println(address);
+        InetAddress sw[] = InetAddress.getAllByName("www.proselyte.net");
+        for (int i=0; i<sw.length; i++)
+            System.out.println(sw[i]);
     }
 }

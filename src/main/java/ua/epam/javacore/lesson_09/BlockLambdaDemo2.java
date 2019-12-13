@@ -14,5 +14,11 @@ public class BlockLambdaDemo2 {
                 reverse.func("Lambda"));
         System.out.println("Expression reversed is " +
                 reverse.func("Expression"));
+
+        StringFunc toUpper = (str) -> {
+          return str.toUpperCase();
+        };
+
+        System.out.println(toUpper.func("low"));
     }
 }
