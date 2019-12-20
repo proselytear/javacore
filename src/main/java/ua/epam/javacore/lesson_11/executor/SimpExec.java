@@ -10,7 +10,7 @@ public class SimpExec {
         CountDownLatch cdl2 = new CountDownLatch(5);
         CountDownLatch cdl3 = new CountDownLatch(5);
         CountDownLatch cdl4 = new CountDownLatch(5);
-        ExecutorService es = Executors.newFixedThreadPool(2);
+        ExecutorService es = Executors.newFixedThreadPool(4);
         System.out.println("Starting");
 // Start the threads.
         es.execute(new MyThread(cdl, "A"));

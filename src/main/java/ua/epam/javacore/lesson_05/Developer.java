@@ -44,7 +44,7 @@ public class Developer implements Comparable<Developer>{
 
     @Override
     public String toString() {
-        return "Developer{" +
+        return "Person{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", country='" + country + '\'' +

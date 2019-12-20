@@ -26,8 +26,6 @@ public class CallableDemo {
         catch (ExecutionException exc) {
             System.out.println(exc);
         }
-        Long currentMills = System.currentTimeMillis();
-
         es.shutdown();
 
         System.out.println("Done");

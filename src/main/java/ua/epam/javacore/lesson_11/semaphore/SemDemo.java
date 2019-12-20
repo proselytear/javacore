@@ -4,7 +4,7 @@ import java.util.concurrent.Semaphore;
 
 public class SemDemo {
     public static void main(String args[]) {
-        Semaphore sem = new Semaphore(1);
+        Semaphore sem = new Semaphore(0);
         new IncThread(sem, "A");
         new DecThread(sem, "B");
     }
