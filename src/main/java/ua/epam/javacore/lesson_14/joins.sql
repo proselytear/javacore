@@ -1,0 +1,1 @@
+select * from developers d left join specialties s on d.specialty_id = s.id ; 

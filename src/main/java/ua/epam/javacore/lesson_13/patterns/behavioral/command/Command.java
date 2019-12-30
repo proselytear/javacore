@@ -1,5 +1,5 @@
 package ua.epam.javacore.lesson_13.patterns.behavioral.command;
 
 public interface Command {
-    public void execute();
+    void execute();
 }

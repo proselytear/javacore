@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Team {
-    private List<Developer> developers = new ArrayList<Developer>();
+    private List<Developer> developers = new ArrayList<>();
 
     public void addDeveloper(Developer developer){
         developers.add(developer);
