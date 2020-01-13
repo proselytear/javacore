@@ -1,0 +1,12 @@
+DELIMITER $$
+DROP PROCEDURE IF EXISTS epam.`getDeveloperName` $$
+CREATE PROCEDURE epam.`getDeveloperName`
+  (IN DEVELOPER_ID INT, OUT DEVELOPER_NAME VARCHAR(50))
+  BEGIN
+    SELECT CONCAT(first_name, ' ', last_name) INTO DEVELOPER_NAME
+    FROM developers
+    WHERE id = DEVELOPER_ID;
+
+  END $$
+
+DELIMITER ;

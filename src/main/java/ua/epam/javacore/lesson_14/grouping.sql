@@ -1,6 +1,6 @@
-INSERT INTO developers VALUES (5, 'Valentin', 'Ivanov', 1);
+-- INSERT INTO developers VALUES (5, 'Valentin', 'Ivanov', 1);
 
-
+--
 SELECT *
 FROM developers
 WHERE last_name IN (
