@@ -1,0 +1,63 @@
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+
+    <changeSet id="1.0.0" author="eugene.suleimanov">
+        <createTable tableName="developers">
+            <column name="id" type="INT" autoIncrement="true">
+                <constraints primaryKey="true"/>
+            </column>
+
+            <column name="first_name" type="VARCHAR(50)">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="last_name" type="VARCHAR(100)">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="email" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="1.0.1" author="eugene.suleimanov">
+        <createTable tableName="skills">
+            <column name="id" type="INT" autoIncrement="true">
+                <constraints primaryKey="true"/>
+            </column>
+
+            <column name="name" type="VARCHAR(100)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="1.0.2" author="eugene.suleimanov">
+        <createTable tableName="developer_skills">
+            <column name="developer_id" type="INT"/>
+            <column name="skill_id" type="INT"/>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="1.0.3" author="eugene.suleimanov">
+        <addForeignKeyConstraint
+                baseTableName="developer_skills"
+                baseColumnNames="developer_id"
+                referencedTableName="developers"
+                referencedColumnNames="id"
+                constraintName="fk_developer_skills_developer"/>
+    </changeSet>
+
+    <changeSet id="1.0.4" author="eugene.suleimanov">
+        <addForeignKeyConstraint
+                baseTableName="developer_skills"
+                baseColumnNames="skill_id"
+                referencedTableName="skills"
+                referencedColumnNames="id"
+                constraintName="fk_developer_skills_skill"/>
+    </changeSet>
+
+</databaseChangeLog>
