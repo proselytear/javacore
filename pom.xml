@@ -16,7 +16,7 @@
         <commons.dbcp.version>1.4</commons.dbcp.version>
         <c3p0.version>0.9.1.2</c3p0.version>
         <hikari.cp.version>3.4.2</hikari.cp.version>
-        <liquibase.version>3.5.5</liquibase.version>
+        <liquibase.version>4.8.0</liquibase.version>
         <h2.version>1.4.199</h2.version>
     </properties>
 
